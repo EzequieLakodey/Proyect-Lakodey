@@ -69,17 +69,59 @@
         </header>
       </div>
 
-      <!-- login form -->
+      <!-- signup form -->
       <div class="form row">
-        <h3>Login</h3>
+        <h3>Sign Up</h3>
+
         <form>
-          <input type="email" type="text" placeholder="E-mail or Username" />
-          <input type="password" placeholder="Password" />
-          <button type="button" class=>Enter</button>
-          <input type="checkbox" value="rememberme" />
-          <p>Remember Me</p>
-          <a href="">Forgot your password?</a>
-          <a href="signup.html">Sign up</a>
+          <input type="text" name="name" placeholder="Name" required />
+
+          <input type="text" name="surname" placeholder="Surname" required />
+
+          <input type="email" name="email" placeholder="E-mail" required />
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Confirm password"
+            required
+          />
+
+          <input type="date" name="age" required />
+
+          <input
+            type="number"
+            type="tel"
+            id="phone"
+            pattern="[0-9]{3}-[0-9-9]{3}-[0-9-9]{4}"
+            required
+            placeholder="Phone number"
+          />
+
+          <input type="submit" name="submit" value="Confirm" id="signup-btn" />
+
+          <div>
+            <input type="checkbox" id="terms" required />
+
+            <label for="terms"> I agree the terms and conditions. </label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="notice" />
+
+            <label for="notice">
+              I want to recive promotions and notifications vía mail.
+            </label>
+          </div>
+          <em> Already have an account?</em>
+          <a href="login.html"> Login </a>
         </form>
       </div>
 
@@ -87,62 +129,52 @@
 
       <div class="grid-item footer row">
         <footer class="footer">
-          
-
-            <ul class="footer-social">
-              <li>
-                <a href="https://www.instagram.com">
-                  <img
+          <ul class="footer-social">
+            <li>
+              <a href="https://www.instagram.com">
+                <img
                   src="../assets/instagram.svg"
                   alt="instragram"
                   width="30em"
-                  />
-                </a>
-              </li>
-              
-              <li>
-                <a href="https://www.facebook.com">
-                  <img src="../assets/facebook.svg" alt="facebook" width="30em" />
-                </a>
-              </li>
-              
-              <li>
-                <a href="https://ar.linkedin.com">
-                  <img src="../assets/linkedin.svg" alt="linkedin" width="30em" />
-                </a>
-              </li>
-            </ul>
-          
-          
-
-            <ul class="footer-costumer ">
-              
-              
-              <li>
-                <h4>Costumer Support</h4>
-              </li>
-              
-              <li>
-                <p>Boomblegoom.inc@gmail.com</p>
-                
-                <p>0800-1199-0055</p>
-                
-                <p>0800-9911-5500</p>
-              </li>
-            </ul>
-          
-          
-         
-
-            <ul class="footer-copyright">
-              <li>
-                <h4>© BoombleGoom inc. 2022. All rights reserverd.</h4>
-              </li>
-              
-              <li>
-                <p>© BoombleGoom inc. 2022. All rights reserverd.</p>
+                />
+              </a>
             </li>
-          
+
+            <li>
+              <a href="https://www.facebook.com">
+                <img src="../assets/facebook.svg" alt="facebook" width="30em" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://ar.linkedin.com">
+                <img src="../assets/linkedin.svg" alt="linkedin" width="30em" />
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-costumer">
+            <li>
+              <h4>Costumer Support</h4>
+            </li>
+
+            <li>
+              <p>Boomblegoom.inc@gmail.com</p>
+
+              <p>0800-1199-0055</p>
+
+              <p>0800-9911-5500</p>
+            </li>
+          </ul>
+
+          <ul class="footer-copyright">
+            <li>
+              <h4>© BoombleGoom inc. 2022. All rights reserverd.</h4>
+            </li>
+
+            <li>
+              <p>© BoombleGoom inc. 2022. All rights reserverd.</p>
+            </li>
           </ul>
         </footer>
       </div>
