@@ -408,6 +408,10 @@ footer ul li h4 {
 
 /* login section */
 
+input {
+  background-color: var(--secondary-color);
+}
+
 .form {
   grid-column: 1/3;
 }
@@ -422,13 +426,14 @@ footer ul li h4 {
 }
 
 .form form input {
-  margin: 1em;
+  margin: 1em 0 1em 0;
 }
 
 .form form a {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 1em;
+  margin: 0.5em 0 0 0;
 }
 
 .form form a:hover {
@@ -437,6 +442,7 @@ footer ul li h4 {
   letter-spacing: 0.2em;
   color: #000;
   font-weight: 700;
+  font-size: 1.25em;
 }
 
 .form form p {
@@ -451,10 +457,10 @@ footer ul li h4 {
   color: var(--primary-color);
 }
 
-form button {
+.form #login-btn {
   font-size: 1em;
-  width: auto;
-  background-color: var(--secondary-color);
+  width: 4em;
+
   color: var(--primary-color);
   border-radius: 0.5em;
   letter-spacing: 0.1em;
@@ -462,20 +468,44 @@ form button {
 
 /* sign up */
 
+.form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+}
+
+.form input {
+  margin: 1em 0 1em 0;
+}
+
 .form form div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 1em;
+  margin: 0.5em 0 0 0;
 }
 
 .form form div input {
   width: auto;
-  margin: 0 1em 0 0;
+  margin: 0 0.5em 0 0;
+}
+
+.form em {
+  margin: 1em 0 0 0;
 }
 
 #notice {
   margin-left: 9em;
+}
+
+#signup-btn {
+  font-size: 1em;
+  width: 6em;
+  border-radius: 0.5em;
+  color: var(--primary-color);
+  letter-spacing: 0.1em;
 }
