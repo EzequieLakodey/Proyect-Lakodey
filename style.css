@@ -1,8 +1,6 @@
 /* general starts*/
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Freehand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
   --primary-color: lightgray;
@@ -529,35 +527,147 @@ footer ul li h4 {
   flex-direction: row;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   z-index: 0;
+  flex-wrap: wrap;
+  flex: 1;
 }
 
 main div img:hover {
   border-radius: 0.5em;
   transform: scale(1.5);
-  transition: 5s all;
-  border: #000 solid 0.5em;
+  transition: 3s all ease-in;
 }
 
-.prod-col1 img {
-  width: 25%;
+main div div img {
+  margin-bottom: 5em;
 }
-.prod-col2 img {
-  width: 25%;
+
+main div div h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  margin: 0.5em 0 0.5em 0;
+  text-decoration: underline black solid;
 }
+
+main div div small {
+  font-size: auto;
+  font-family: "Lato", sans-serif;
+  color: var(--secondary-color);
+  font-style: italic;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0.5em 0 0.5em 0;
+  letter-spacing: 0.1em;
+}
+
+main div div em {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0.5em 0 0.5em 0;
+  background-color: var(--secondary-color);
+  border-radius: 0.5em;
+  width: 20em;
+  letter-spacing: 0.25em;
+}
+
+main div div a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--secondary-color);
+  width: 20em;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+main div div a:hover {
+  transition: all 1s ease-in;
+  border-radius: 0em;
+  width: 10em;
+  color: navy;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  background-color: aquamarine;
+}
+
+.prod-item1 img {
+  width: 50%;
+}
+
+.prod-item2 img {
+  width: 50%;
+}
+
+.prod-item3 img {
+  width: 50%;
+
+  border-radius: 0.5em;
+}
+
 .prod-col1 {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
   align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
+  justify-content: space-between;
+  border-radius: 0.5em;
+  flex-wrap: wrap;
 }
-.prod-col2 {
+
+.prod-col1:hover,
+.prod-col2:hover,
+.prod-col3:hover {
+  z-index: 0;
+  transform: scaleX(1.2) scaleY(1.08);
+  transition: all 2s;
+}
+
+.prod-item1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  width: 50%;
+  margin: 5em 0 5em 0;
+}
+
+.prod-col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0.5em;
+  flex-wrap: wrap;
+}
+
+.prod-item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 0 5em 0;
+}
+
+.prod-col3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5em;
+  flex-wrap: wrap;
+}
+
+.prod-item3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 0 5em 0;
 }
