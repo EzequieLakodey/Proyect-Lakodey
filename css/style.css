@@ -1,6 +1,31 @@
-/* index */
-/* login */
-/* signup */
-/* products */
+/* bg */
+/* colors */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 2px #000;
+}
+
+body {
+  text-shadow: 0 0 2px #000;
+  background-image: linear-gradient(rgb(8, 8, 19), rgb(138, 138, 138));
+}
+
+.grid-container {
+  margin: 0 1%;
+  display: grid;
+  gap: 1vmax;
+  background-image: linear-gradient(rgb(8, 8, 19), rgb(138, 138, 138));
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "nav nav" "image1 image2" "article aside " "contact contact" "footer footer";
+}
 
 /*# sourceMappingURL=style.css.map */
