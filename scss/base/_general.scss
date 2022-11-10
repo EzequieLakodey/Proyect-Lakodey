@@ -31,7 +31,7 @@ body {
 li a {
   text-decoration: none;
 
-  color: #fff;
+  color: nth($colors, 1);
 }
 
 h2 a {

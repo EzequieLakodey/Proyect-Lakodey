@@ -8,18 +8,18 @@
 
 @import "components/header";
 
-@import "components/carousel";
-
-@import "components/article.scss";
-
-@import "components/aside";
-
-@import "components/contact";
-
 @import "components/footer";
 
-@import "components/login";
+@import "components/index/carousel";
 
-@import "components/signup";
+@import "components/index/article";
 
-@import "components/products";
+@import "components/index/aside";
+
+@import "components/index/contact";
+
+@import "components/login/login";
+
+@import "components/signup/signup";
+
+@import "components/products/products";

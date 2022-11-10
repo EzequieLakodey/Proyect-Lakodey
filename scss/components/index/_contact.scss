@@ -1,0 +1,114 @@
+@import "../../base/general";
+
+@import "../../base/grid";
+
+@import "../../base/mixins";
+
+@import "../../base/variable";
+
+.contact {
+  @include areas(contact);
+
+  display: flex;
+
+  flex-direction: column;
+
+  letter-spacing: 1vmin;
+
+  margin-right: 2%;
+
+  .contact-legend {
+    p {
+      margin-bottom: 1em;
+    }
+  }
+
+  form {
+    justify-content: center;
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    width: auto;
+
+    .form {
+      input {
+        color: nth($colors, 1);
+
+        background-color: nth($colors, 2);
+
+        width: 20rem;
+
+        &:hover {
+          animation: contact 120s;
+        }
+        @keyframes contact {
+          0% {
+            text-transform: capitalize;
+
+            font-size: auto;
+
+            transform: scale(1.5);
+
+            border: #fff double 2px;
+
+            letter-spacing: auto;
+
+            background-color: nth($colors, 2);
+          }
+        }
+      }
+      ::placeholder {
+        letter-spacing: 3px;
+
+        color: nth($colors, 1);
+
+        opacity: 75%;
+      }
+    }
+  }
+}
+.submit-button {
+  flex-wrap: wrap;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-top: 1em;
+
+  margin-right: 3%;
+
+  input {
+    width: 10em;
+
+    text-transform: uppercase;
+
+    background-color: nth($colors, 8);
+
+    color: nth($colors, 1);
+
+    margin: 1% 0 0 0;
+
+    &:hover {
+      animation: submit 5s;
+    }
+
+    @keyframes submit {
+      100% {
+        transform: scale(1.5);
+
+        border: nth($colors, 1) double 2px;
+
+        letter-spacing: 5px;
+
+        background-color: nth($colors, 2);
+      }
+    }
+  }
+}

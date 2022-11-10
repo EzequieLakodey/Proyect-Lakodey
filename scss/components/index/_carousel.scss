@@ -1,6 +1,10 @@
-@import "../base/mixins";
+@import "../../base/general";
 
-@import "../base/variable";
+@import "../../base/grid";
+
+@import "../../base/mixins";
+
+@import "../../base/variable";
 
 .image1 {
   @include areas(image1);

@@ -1,6 +1,10 @@
 @import "../base/mixins";
 
+@import "../base/grid";
+
 @import "../base/variable";
+
+@import "../base/general";
 
 .nav {
   background: $bg-header;
