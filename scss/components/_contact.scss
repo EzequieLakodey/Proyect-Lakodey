@@ -1,0 +1,7 @@
+@import "../base/mixins";
+
+@import "../base/variable";
+
+.contact {
+  @include areas(contact);
+}

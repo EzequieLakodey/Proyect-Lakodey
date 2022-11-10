@@ -1,0 +1,10 @@
+@import "../base/mixins";
+
+@import "../base/variable";
+
+.article {
+  @include areas(article);
+  border: 5px black dotted;
+}
+
+

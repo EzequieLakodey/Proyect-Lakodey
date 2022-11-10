@@ -1,0 +1,39 @@
+@import "../base/mixins";
+
+@import "../base/variable";
+
+.image1 {
+  @include areas(image1);
+
+  flex-wrap: wrap;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  &:hover {
+    transform: scale(1.02);
+
+    transition: 3s all;
+  }
+}
+
+.image2 {
+  @include areas(image2);
+
+  flex-wrap: wrap;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  &:hover {
+    transform: scale(1.02);
+
+    transition: 3s all;
+  }
+}
