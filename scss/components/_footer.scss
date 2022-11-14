@@ -1,13 +1,16 @@
 @import "../base/mixins";
 
-@import "../base/grid";
-
 @import "../base/variable";
-
-@import "../base/general";
 
 .footer {
   @include areas(footer);
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
   footer {
     display: flex;
@@ -52,6 +55,17 @@
 
       letter-spacing: 2px;
       li {
+        @media (max-width: 1024px) {
+          display: flex;
+
+          flex-direction: column;
+
+          align-items: center;
+
+          font-size: 1em;
+
+          letter-spacing: 5px;
+        }
         h4 {
           font-size: 14px;
 

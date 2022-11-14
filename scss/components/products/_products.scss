@@ -1,7 +1,208 @@
-@import "../../base/general";
-
-@import "../../base/grid";
-
 @import "../../base/mixins";
 
 @import "../../base/variable";
+
+.products-container {
+  display: grid;
+
+  grid-template-columns: subgrid;
+
+  grid-template-rows: subgrid;
+
+  grid-column: 1/3;
+
+  main {
+    margin: 5em 0 0 0;
+
+    flex-direction: row;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    z-index: 0;
+
+    flex-wrap: wrap;
+
+    .prod-col1,
+    .prod-col2,
+    .prod-col3 {
+      display: flex;
+
+      flex-direction: column;
+
+      background-color: nth($colors, 1);
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      border-radius: 0.5em;
+
+      flex-wrap: wrap;
+
+      &:hover {
+        z-index: 0;
+
+        transform: scaleX(1.2) scaleY(1.08);
+
+        transition: all 2s;
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
+      .prod-item1,
+      .prod-item2,
+      .prod-item3 {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        margin: 5em 0 5em 0;
+        img {
+          width: 50%;
+
+          border-radius: 0.5em;
+
+          margin-bottom: 5em;
+
+          @media (max-width: 1024px) {
+            width: 75%;
+          }
+
+          &:hover {
+            border-radius: 0.5em;
+
+            transform: scale(1.5);
+
+            transition: 3s all ease-in;
+
+            @media (max-width: 1024px) {
+              display: none;
+            }
+          }
+        }
+
+        h6 {
+          font-family: "Lato", sans-serif;
+
+          font-size: 1em;
+
+          color: nth($colors, 4);
+
+          text-transform: uppercase;
+
+          font-weight: 900;
+
+          text-align: center;
+
+          margin: 0.5em 0 0.5em 0;
+
+          text-decoration: underline black solid;
+        }
+        small {
+          font-size: auto;
+
+          font-family: "Lato", sans-serif;
+
+          color: nth($colors, 4);
+
+          font-style: italic;
+
+          text-align: center;
+
+          text-transform: capitalize;
+
+          margin: 0.5em 0 0.5em 0;
+
+          letter-spacing: 0.1em;
+        }
+        em {
+          font-weight: bold;
+
+          font-size: 1.5em;
+
+          font-family: "Lato", sans-serif;
+
+          color: nth($colors, 3);
+
+          text-align: center;
+
+          text-transform: uppercase;
+
+          margin: 0.5em 0 0.5em 0;
+
+          background-color: nth($colors, 4);
+
+          border-radius: 0.5em;
+
+          width: 20em;
+
+          letter-spacing: 0.25em;
+
+          @media (max-width: 1024px) {
+            width: 10em;
+          }
+        }
+        a {
+          font-family: "Lato", sans-serif;
+
+          text-decoration: none;
+
+          color: nth($colors, 1);
+
+          background-color: nth($colors, 4);
+
+          width: 20em;
+
+          border-radius: 0.5em;
+
+          font-size: 1.5em;
+
+          margin: 0.5em 0 0.5em 0;
+
+          @media (max-width: 1024px) {
+            width: 10em;
+
+            font-family: "Lato", sans-serif;
+
+            text-decoration: none;
+
+            color: nth($colors, 7);
+
+            background-color: nth($colors, 6);
+
+            border-radius: 0em;
+
+            margin: 0.5em 0 0.5em 0;
+          }
+
+          &:hover {
+            transition: all 1s ease-in;
+
+            border-radius: 0em;
+
+            width: 10em;
+
+            color: nth($colors, 7);
+
+            font-weight: 300;
+
+            letter-spacing: 0.2em;
+
+            background-color: nth($colors, 6);
+
+            @media (max-width: 1024px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

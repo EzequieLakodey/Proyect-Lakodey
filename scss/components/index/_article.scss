@@ -1,7 +1,3 @@
-@import "../../base/general";
-
-@import "../../base/grid";
-
 @import "../../base/mixins";
 
 @import "../../base/variable";
@@ -27,10 +23,18 @@
 
       font-size: 1.5em;
 
+      @media (max-width: 1024px) {
+        letter-spacing: 3px;
+      }
+
       &:hover {
         border-bottom: 2px solid white;
 
         letter-spacing: 3px;
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
       }
 
       a {
@@ -42,6 +46,10 @@
           transition: all 3s;
 
           color: nth($colors, 2);
+
+          @media (max-width: 1024px) {
+            display: none;
+          }
         }
       }
     }

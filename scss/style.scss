@@ -2,24 +2,24 @@
 
 @import "base/variable";
 
-@import "base/grid";
-
 @import "base/mixins";
+
+@import "components/grid";
 
 @import "components/header";
 
 @import "components/footer";
 
-@import "components/index/carousel";
-
 @import "components/index/article";
 
 @import "components/index/aside";
 
-@import "components/index/contact";
+@import "components/index/carousel";
 
-@import "components/login/login";
+@import "components/index/contact";
 
 @import "components/signup/signup";
 
 @import "components/products/products";
+
+@import "components/login/login";

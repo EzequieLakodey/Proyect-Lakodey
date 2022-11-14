@@ -1,7 +1,44 @@
-@import "../../base/general";
-
-@import "../../base/grid";
-
 @import "../../base/mixins";
 
 @import "../../base/variable";
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+
+  form {
+    input {
+      margin: 1em 0 1em 0;
+    }
+
+    #signup-btn {
+      font-size: 1em;
+      width: 6em;
+      border-radius: 0.5em;
+      color: nth($colors, 3);
+      letter-spacing: 0.1em;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0.5em 0 0 0;
+      input {
+        width: auto;
+        margin: 0 0.5em 0 0;
+      }
+
+      #notice {
+        margin-left: 9em;
+      }
+    }
+    em {
+      margin: 1em 0 0 0;
+    }
+  }
+}

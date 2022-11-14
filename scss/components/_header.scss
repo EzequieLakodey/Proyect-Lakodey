@@ -1,10 +1,6 @@
 @import "../base/mixins";
 
-@import "../base/grid";
-
 @import "../base/variable";
-
-@import "../base/general";
 
 .nav {
   background: $bg-header;
@@ -24,6 +20,15 @@
   margin: 0;
 
   header {
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+    }
     nav {
       display: flex;
 
