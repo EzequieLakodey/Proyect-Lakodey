@@ -487,6 +487,7 @@ h2 a {
 }
 @media (max-width: 1024px) {
   .footer footer .footer-social {
+    padding: 0;
     margin: 1em 0;
   }
 }
@@ -499,11 +500,19 @@ h2 a {
 }
 @media (max-width: 1024px) {
   .footer footer .footer-costumer {
+    padding: 0;
     margin: 1em 0;
   }
 }
+.footer footer .footer-costumer li p {
+  margin: 0;
+}
+.footer footer .footer-costumer li h4 {
+  margin: 0;
+}
 .footer footer .footer-costumer li h4 {
   font-size: 14px;
+  margin: 0;
   text-transform: uppercase;
 }
 .footer footer .footer-copyright {
@@ -516,6 +525,7 @@ h2 a {
 @media (max-width: 1024px) {
   .footer footer .footer-copyright {
     margin: 1em 0 0 0;
+    padding: 0;
   }
 }
 .footer footer .footer-copyright li h4 {
