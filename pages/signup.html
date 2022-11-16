@@ -73,7 +73,7 @@
       <div class="form row">
         <h3>Sign Up</h3>
 
-        <form>
+        <form class="register">
           <input type="text" name="name" placeholder="Name" required />
 
           <input type="text" name="surname" placeholder="Surname" required />
@@ -105,8 +105,6 @@
             placeholder="Phone number"
           />
 
-          <input type="submit" name="submit" value="Complete" id="signup-btn" />
-
           <div>
             <input type="checkbox" id="terms" required />
 
@@ -120,7 +118,16 @@
               I want to recive promotions and notifications vía mail.
             </label>
           </div>
+
+          <input
+            type="submit"
+            name="submit"
+            value="Complete"
+            class="accounts-btn"
+          />
+
           <em> Already have an account?</em>
+
           <a href="login.html"> Login </a>
         </form>
       </div>
@@ -183,6 +190,7 @@
 
     <!-- aos animations -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>

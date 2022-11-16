@@ -3,43 +3,49 @@
 @import "../../base/variable";
 
 .contact {
-  @include areas(contact);
+  @include flex(center, column);
 
   display: flex;
 
-  flex-direction: column;
-
   letter-spacing: 1vmin;
 
-  margin-right: 2%;
-
   .contact-legend {
+    margin-top: 3em;
+
     p {
       margin-bottom: 1em;
     }
   }
 
   form {
-    justify-content: center;
+    @extend %margin-padding;
 
-    display: flex;
+    @extend %flex-centered;
 
-    flex-direction: row;
-
-    flex-wrap: wrap;
+    @include flex(center, row);
 
     width: auto;
 
     .form {
       input {
-        color: nth($colors, 1);
+        @extend %form-input;
 
-        background-color: nth($colors, 2);
+        @media (max-width: 1024px) {
+          margin: 1em;
 
-        width: 20rem;
+          width: 15em;
+
+          font-size: auto;
+
+          height: 2em;
+        }
 
         &:hover {
           animation: contact 120s;
+
+          @media (max-width: 1024px) {
+            animation: none;
+          }
         }
         @keyframes contact {
           0% {
@@ -52,47 +58,53 @@
             border: #fff double 2px;
 
             letter-spacing: auto;
-
-            background-color: nth($colors, 2);
           }
         }
       }
       ::placeholder {
-        letter-spacing: 3px;
-
-        color: nth($colors, 1);
-
-        opacity: 75%;
+        @extend %placeholder;
       }
     }
   }
 }
 .submit-button {
-  flex-wrap: wrap;
+  @extend %flex-centered;
 
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
+  @include flex(center, row);
 
   margin-top: 1em;
 
   margin-right: 3%;
 
   input {
-    width: 10em;
+    @extend %default-btn;
 
-    text-transform: uppercase;
+    margin: 1em 0 0 0;
 
-    background-color: nth($colors, 8);
+    color: nth($colors, 2);
 
-    color: nth($colors, 1);
+    @media (max-width: 1024px) {
+      letter-spacing: 5px;
 
-    margin: 1% 0 0 0;
+      background-color: nth($colors, 3);
+
+      color: nth($colors, 2);
+
+      height: 2em;
+
+      margin: 1em;
+
+      width: 15em;
+
+      font-weight: bold;
+    }
 
     &:hover {
       animation: submit 5s;
+
+      @media (max-width: 1024px) {
+        animation: none;
+      }
     }
 
     @keyframes submit {
@@ -100,6 +112,10 @@
         transform: scale(1.5);
 
         border: nth($colors, 1) double 2px;
+
+        color: nth($colors, 1);
+
+        border-radius: 0.5em;
 
         letter-spacing: 5px;
 

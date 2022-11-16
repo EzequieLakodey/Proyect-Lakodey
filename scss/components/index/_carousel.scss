@@ -1,37 +1,33 @@
 @import "../../base/mixins";
 
 .image1 {
-  @include areas(image1);
-
-  flex-wrap: wrap;
+  @include flex(space-around, row);
 
   display: flex;
 
-  flex-direction: row;
-
-  justify-content: space-around;
-
   &:hover {
-    transform: scale(1.02);
+    @extend %img-hover;
 
-    transition: 3s all;
+    @media (max-width: 1024px) {
+      transform: none;
+
+      transition: none;
+    }
   }
 }
 
 .image2 {
-  @include areas(image2);
-
-  flex-wrap: wrap;
+  @include flex(space-around, row);
 
   display: flex;
 
-  flex-direction: row;
-
-  justify-content: space-around;
-
   &:hover {
-    transform: scale(1.02);
+    @extend %img-hover;
 
-    transition: 3s all;
+    @media (max-width: 1024px) {
+      transform: none;
+
+      transition: none;
+    }
   }
 }

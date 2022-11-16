@@ -72,20 +72,32 @@
       <!-- login form -->
       <div class="form row">
         <h3>Login</h3>
-        <form>
+
+        <form class="login">
           <input
             type="email"
             type="text"
             placeholder="E-mail or Username"
             required
           />
+
           <input type="password" placeholder="Password" required />
-          <input type="submit" name="submit" value="Enter" id="login-btn" />
+
+          <input
+            type="submit"
+            name="submit"
+            value="Sign in"
+            class="accounts-btn"
+          />
+
           <div>
-            <input type="checkbox" value="rememberme" />
-            <p>Remember me</p>
+            <input type="checkbox" value="remember-me" id="remember-me" />
+
+            <label for="remember-me"> Remember me </label>
           </div>
+
           <a href="">Forgot your password?</a>
+
           <a href="signup.html">Sign up</a>
         </form>
       </div>

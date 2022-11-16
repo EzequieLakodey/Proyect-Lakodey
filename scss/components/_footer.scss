@@ -2,70 +2,64 @@
 
 @import "../base/variable";
 
+@import "../base/extends";
+
 .footer {
   @include areas(footer);
 
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
   footer {
-    display: flex;
+    @extend %flex-end;
 
-    justify-content: space-between;
+    @include flex(space-between, row);
 
-    align-items: center;
+    margin: 5em 0 0 0;
 
-    flex-wrap: wrap;
+    @media (max-width: 1024px) {
+      @include flex(center, column);
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      align-items: center;
+    }
 
     .footer-social {
-      flex-direction: column;
+      @extend %margin-padding;
 
-      flex-wrap: wrap;
+      @extend %flex-end;
 
-      display: flex;
+      @include flex(space-between, column);
 
-      align-items: center;
-
-      justify-content: space-between;
-
-      margin: 3% 0 0 0;
+      @media (max-width: 1024px) {
+        margin: 1em 0;
+      }
     }
     .footer-costumer {
-      margin: 5% 0 0 10%;
+      @extend %margin-padding;
 
-      align-items: center;
+      @extend %flex-centered !optional;
 
-      display: flex;
+      @include flex(space-around, column);
 
-      flex-wrap: wrap;
+      font-size: 0.8em;
 
-      justify-content: space-around;
-
-      font-size: 12px;
-
-      opacity: 50%;
-
-      flex-direction: column;
-
-      text-align: justify;
+      opacity: 70%;
 
       letter-spacing: 2px;
+
+      @media (max-width: 1024px) {
+        margin: 1em 0;
+      }
       li {
-        @media (max-width: 1024px) {
-          display: flex;
-
-          flex-direction: column;
-
-          align-items: center;
-
-          font-size: 1em;
-
-          letter-spacing: 5px;
+        p {
+          @extend %margin-padding;
         }
+
+        h4 {
+          @extend %margin-padding;
+        }
+
         h4 {
           font-size: 14px;
 
@@ -74,25 +68,21 @@
       }
     }
     .footer-copyright {
-      flex-direction: column;
+      @extend %flex-centered;
 
-      align-items: center;
+      @extend %margin-padding;
 
-      display: flex;
-
-      flex-wrap: wrap;
-
-      justify-content: space-around;
+      @include flex(space-around, column);
 
       font-size: 12px;
 
-      opacity: 50%;
-
-      text-align: justify;
+      opacity: 70%;
 
       letter-spacing: 2px;
 
-      margin: 7% 0 0 0;
+      @media (max-width: 1024px) {
+        margin: 1em 0 0 0;
+      }
 
       li {
         h4 {

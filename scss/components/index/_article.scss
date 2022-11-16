@@ -5,17 +5,11 @@
 .article {
   @include areas(article);
 
+  @extend %flex-centered;
+
+  @include flex(center, row);
+
   border: 5px black dotted;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: flex-start;
-
-  flex-direction: row;
-
-  flex-wrap: wrap;
 
   article {
     h2 {
